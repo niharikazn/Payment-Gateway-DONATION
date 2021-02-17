@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate.com</title>
+    <link rel = "icon" href = "logo.jpg" type = "image/x-icon"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Don<span>ate.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1"><strong>GIVE SOMEONE <br></strong></div>
+                <div class="text-2">THE GIFT OF FUTURE VISION</div>
+                <div class="text-3"><strong>Small help when multiplied by millions of people can transform the world</strong></div>
+                <form class="buttons"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GcajhqQ39IyWXH" async> </script> </form>
+            </div>
+        </div>
+    </section>
+   
+<section id="gallery">
+    <h2 class="title">GAllERY</h2>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="child.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="child1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="child2.jpg" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    </section>
+    <!-- about section -->
+   <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Us</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="niha.png" alt="Niharika image">
+            </div>
+            <div class="column right">
+                <p>
+                <a style="color: blue; font-size: xx-large;">Niharika Jain<br></a>
+                Every child deserves a healthy start in life, the opportunity to learn and protection from harm. Yet, an estimated 5.4 million children under age 5 still die each year from preventable causes, 250 million children around the world can’t read, despite years of schooling, and far too many children are experiencing physical and emotional abuse, sexual exploitation, deprivation and neglect. 
+
+                That's why as global leaders in child health, education and protection, we're working in more than 100 countries to change the lives of over 100 million children every year. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact section -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Niharika Jain</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Ajmer,Rajasthan</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">Niharikajain166@gmail.com</div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+                    <div class="column right">
+                <div class="text">Message me</div>
+                <form action="">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Your Name" name="name" id="name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Your Email" name="email" id="email" required>
+                        </div>
+                    </div>
+                        <div class="field textarea">
+                            <textarea id="msg" placeholder="Describe your message" name="message" id="needs" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="Submit">Send message</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer section -->
+<footer>
+    <span>Created By <a href="#">Niharika Jain</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
